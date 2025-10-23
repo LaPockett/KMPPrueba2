@@ -76,7 +76,8 @@ fun AppPrueba(){
                 }
             }
             composable(route = "welcome/{name}") { backStackEntry ->
-                val name = backStackEntry.arguments?.getString("name") ?: ""
+                //val name = backStackEntry.arguments?.getString("name") ?: "" ERROR
+                val name = "Prueba"
                 WelcomeScreen(name = name, navController = navController)
             }
             composable(route = "brand") {
